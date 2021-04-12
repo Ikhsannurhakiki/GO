@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">GO</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="bar_icon">bar_icon</string>
+    <string name="login">Login</string>
+    <string name="icon">icon</string>
+    <string name="app">GO_.....</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="atau_masuk_dengan">Atau masuk dengan</string>
+    <string name="google">Google</string>
+    <string name="icon_google">icon google</string>
+    <string name="facebook">Facebook</string>
+    <string name="icon_facebook">icon facebook</string>
+    <string name="daftar">Daftar</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fullname">Fullname</string>
+    <string name="e_mail">E-mail</string>
+    <string name="atau_daftar_dengan">atau daftar dengan</string>
+    <string name="sudah_punya_akun">sudah punya akun?</string>
 </resources>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:contentDescription="@string/bar_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/selamat_datang"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/home"
+                android:contentDescription="@string/icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/app"
+                android:textColor="@color/lime"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txt_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginBottom="10sp"
+                android:autofillHints="@string/username"
+                android:background="@color/et_purple"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginBottom="10sp"
+                android:background="@color/et_purple"
+                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/e_mail"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="@string/e_mail"/>
+
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginBottom="10sp"
+                android:background="@color/et_purple"
+                android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_baseline_person_pin_24"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="@string/username" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginBottom="10sp"
+                android:background="@color/et_purple"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="@string/password"
+                android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+                android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+                android:paddingEnd="10dp"/>
+
+
+            <android.widget.Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/btn_bg"
+                android:text="@string/daftar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="@color/lime"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/atau_daftar_dengan"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:background="@color/lime" />
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginBottom="20dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:src="@drawable/google"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:layout_marginEnd="5dp"-->
+<!--                    android:contentDescription="@string/icon_google" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/google"-->
+<!--                    android:textSize="16sp" />-->
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:src="@drawable/facebook"-->
+<!--                    android:contentDescription="@string/icon_facebook" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="@string/facebook"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="@color/lime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sudah_punya_akun"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:background="@color/lime" />
+            </LinearLayout>
+
+            <android.widget.Button
+                android:id="@+id/btn_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_bg2"
+                android:text="@string/masuk"
+                android:textColor="@color/lime"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20sp"
+                android:background="@color/lime"
+                android:paddingBottom="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
